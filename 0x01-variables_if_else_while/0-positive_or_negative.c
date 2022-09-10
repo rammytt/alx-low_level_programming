@@ -2,97 +2,45 @@
 
 
 
-
-
 /**
 
+* main - print the string in the put function
 
+*
 
- * main - Prints if number is positive, zero or negative
+* Description: using the main function
 
+* this program prints "Programming is like building a multilingual puzzle
 
+* Return: 0
 
- *
-
-
-
- * Return: Always (Success)
-
-
-
- */
-
-
+*/
 
 int main(void)
 
-
-
 {
 
+	char c;
 
+	int i;
 
-    int n;
+	long li;
 
+	long long lli;
 
-
-
-
-    srand(time(0));
-
-
-
-    n = rand() - RAND_MAX / 2;
+	float f;
 
 
 
+	printf("Size of a char: %ld byte(s)\n", sizeof(c));
 
+	printf("Size of an int: %ld byte(s)\n", sizeof(i));
 
-    if (n > 0)
+	printf("Size of a long int: %ld byte(s)\n", sizeof(li));
 
+	printf("Size of a long long int: %ld byte(s)\n", sizeof(lli));
 
+	printf("Size of a float: %ld byte(s)\n", sizeof(f));
 
-    {
-
-
-
-        printf("%d is positive\n", n);
-
-
-
-    }
-
-
-
-    else if (n == 0)
-
-
-
-    {
-
-
-
-        printf("%d is zero\n", n);
-
-
-
-    }
-
-
-
-    else
-
-
-
-    {
-
-
-
-        printf("%d is negative\n", n);
-
-
-
-    }
-
-
+	return (0);
 
