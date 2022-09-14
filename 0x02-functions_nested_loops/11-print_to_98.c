@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * _isalpha - function to check if c is a letter, lowercase or uppercase
- * @c: is the int that will use for the argument of the function
+ * print_to_98 - Prints all natural numbers from input to 98,
+ * in order separated by a comma followed by a space.
+ * @n: The number to begin counting at.
  */
 void print_to_98(int n)
 {
