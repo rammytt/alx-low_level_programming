@@ -1,13 +1,20 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN_H_INCLUDED
+
+#define MAIN_H_INCLUDED
 
 
 
-/**
- * main - header file for protoypes
- * void protoypes (void)
- * int protoypes (int)
- */
+#include <stdio.h>
+
+
+
+int _putchar(char c);
+
+int _isupper(int c);
+
+int _isdigit(int c);
+
+int mul(int a, int b);
 
 void print_numbers(void);
 
@@ -25,14 +32,6 @@ void print_triangle(int size);
 
 void print_number(int n);
 
-int _putchar(char);
-
-int _isupper(int);
-
-int _isdigit(int);
-
-int mul(int, int);
 
 
-
-#eif /* MAIN_H */
+#endif
