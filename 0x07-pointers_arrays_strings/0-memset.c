@@ -3,27 +3,24 @@
 
 
 /**
-* _memset - a memory block
-* @s: address
-* @b: constant byte
-* @n: number of bytes
-* Return: Always 0 (Success)
-*/
+ * _memset - a memory block
+ * @s: address
+ * @b: constant byte
+ * @n: number of bytes
+ * Return: Always 0 (Success)
+ */
 
-char *_memset(char *s, char b, unsigned int n)
 
+void *_memset(void *s, int c, size_t n)
 {
+	unsigned int index;
 
-	while (n)
+	unsigned char *memory = s, value = c;
 
-	{
+	for (index = 0; index < n; index++)
 
-		s[n-1] = b;
+		memory[index] = value;
 
-		n--;
-
-	}
-
-	return (s);
+	return (memory);
 
 }
