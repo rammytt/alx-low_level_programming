@@ -1,7 +1,5 @@
 #include "main.h"
 
-
-
 /**
  * _memset - a memory block
  * @s: address
@@ -10,17 +8,20 @@
  * Return: Always 0 (Success)
  */
 
+char *_memset(char *s, char b, unsigned int n)
 
-void *_memset(void *s, int c, size_t n)
 {
-	unsigned int index;
 
-	unsigned char *memory = s, value = c;
+	while (n)
 
-	for (index = 0; index < n; index++)
+	{
 
-		memory[index] = value;
+		s[n - 1] = b;
 
-	return (memory);
+		n--;
+
+	}
+
+	return (s);
 
 }
