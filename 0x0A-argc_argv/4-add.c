@@ -4,24 +4,32 @@
 #include <string.h>
 
 /**
- * check_num - check - string there are digit
- * @str: array str
- * Return: Always 0 (Success)
+ * main - adds numbers
+ * @argc: number of arguments passed to the function
+ * @argv: argument vector of pointers to strings
+ * Return: Always 0 (Success) else 1
  */
 
-int check_num(char *str)
+int main(int argc, char *argv[])
 
 {
-	unsigned int count;
+	int a = 0, i, j;
 
-	count = 0;
-	while (count < strlen(str)) /*count stings*/
+	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(str[count])) /*check if str there are digit*/
+		for (j = 0; argv[i][j]; j++)
+		{
+			if (isdigit(argv[i][j]) == 0)
+			{
+				puts("Error");
+				return (1);
+			}
+		}
+	}
+	for (i = 1; i < argc; i++)
 	{
-		return (0);
+		a += atoi(argv[i]);
 	}
-		count++;
-	}
-	return (1);
+	printf("%d\n", a);
+	return (0);
 }
